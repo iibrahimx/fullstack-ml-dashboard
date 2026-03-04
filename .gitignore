@@ -43,6 +43,7 @@ ml/reports/
 # Data files (keep datasets local)
 data/
 datasets/
+ml/data/
 *.csv
 *.parquet
 *.feather
