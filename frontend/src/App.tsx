@@ -1,11 +1,7 @@
+import { DashboardPage } from "./pages/DashboardPage";
+
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-gray-800">
-        ML Loan Risk Dashboard
-      </h1>
-    </div>
-  );
+  return <DashboardPage />;
 }
 
 export default App;
