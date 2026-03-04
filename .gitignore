@@ -1,0 +1,57 @@
+# ----------------------------
+# OS / Editor
+# ----------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ----------------------------
+# Python / Django
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+
+# virtual environments
+.venv/
+venv/
+env/
+
+# Django static/media (we will handle later if needed)
+staticfiles/
+media/
+
+# ----------------------------
+# Jupyter / ML artifacts
+# ----------------------------
+.ipynb_checkpoints/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# Data files (keep datasets local)
+data/
+datasets/
+*.csv
+*.parquet
+*.feather
+
+# ----------------------------
+# Node / React
+# ----------------------------
+node_modules/
+dist/
+build/
+.cache/
+.next/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
