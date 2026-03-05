@@ -1,6 +1,11 @@
 import type { PredictionInput, PredictionResponse } from "../types/prediction";
 
-const API_URL = "http://127.0.0.1:8000/api/predict/";
+// Read API base URL from environment variable
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ?? "http://127.0.0.1:8000";
+
+// Build the final endpoint
+const API_URL = `${API_BASE_URL}/api/predict/`;
 
 export async function predictLoanRisk(
   data: PredictionInput,

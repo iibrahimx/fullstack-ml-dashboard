@@ -203,6 +203,10 @@ cd frontend
 # Install dependencies
 npm install
 
+# Frontend enviroment variables
+# Copy the example file and create your local env file
+cp .env.example .env.local
+
 # Run development server
 npm run dev
 ```
