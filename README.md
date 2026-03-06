@@ -1,5 +1,13 @@
 # Fullstack ML Loan Risk Dashboard
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Django](https://img.shields.io/badge/Django-REST%20API-092E20?logo=django)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-F7931E?logo=scikitlearn)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-Language-3178C6?logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Styling-38B2AC?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite)
+
 A small full-stack machine learning project built to practice combining **data science, backend APIs, and frontend applications**.
 
 The application predicts the probability that a user may **default on a loan** using a trained machine learning model.  
