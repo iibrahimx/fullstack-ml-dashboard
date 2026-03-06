@@ -26,10 +26,10 @@ export function DashboardPage() {
     <div className="min-h-screen bg-gray-100">
       <div className="max-w-5xl mx-auto p-6 space-y-6">
         <header className="space-y-1">
-          <h1 className="text-3xl font-bold text-gray-900">
+          <h1 className="text-5xl font-bold text-gray-900 text-center mb-4">
             ML Loan Risk Dashboard
           </h1>
-          <p className="text-gray-700">
+          <p className="text-gray-700 font-medium">
             Enter values to get a default risk prediction from the trained
             model.
           </p>
@@ -38,7 +38,7 @@ export function DashboardPage() {
         <div className="flex items-center gap-3">
           <button
             onClick={clearHistory}
-            className="rounded-lg border px-3 py-2 text-sm bg-white"
+            className="rounded-lg px-3 py-2 text-white text-sm bg-amber-700 hover:bg-amber-900 cursor-pointer"
           >
             Clear history
           </button>

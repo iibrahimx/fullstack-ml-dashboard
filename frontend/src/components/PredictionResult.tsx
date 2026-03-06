@@ -12,12 +12,18 @@ export function PredictionResult({ result }: Props) {
     result.prediction === 1 ? "Higher default risk" : "Lower default risk";
 
   return (
-    <div className="bg-white rounded-2xl shadow p-6 space-y-4">
+    <div className="bg-slate-100 rounded-2xl shadow-xl border border-slate-200 p-6 space-y-4">
       <h2 className="text-xl font-semibold text-gray-800">Result</h2>
 
       <div className="flex items-center justify-between">
         <span className="text-gray-700">Prediction</span>
-        <span className="font-semibold">{label}</span>
+        <span
+          className={`font-semibold ${
+            result.prediction === 1 ? "text-amber-600" : "text-emerald-600"
+          }`}
+        >
+          {label}
+        </span>
       </div>
 
       <div className="space-y-2">
@@ -31,7 +37,7 @@ export function PredictionResult({ result }: Props) {
             </div>
             <div className="h-3 rounded bg-gray-100 overflow-hidden">
               <div
-                className="h-3 bg-gray-900"
+                className="h-3 bg-amber-700"
                 style={{ width: `${p0 * 100}%` }}
               />
             </div>
@@ -44,7 +50,7 @@ export function PredictionResult({ result }: Props) {
             </div>
             <div className="h-3 rounded bg-gray-100 overflow-hidden">
               <div
-                className="h-3 bg-gray-900"
+                className="h-3 bg-amber-700"
                 style={{ width: `${p1 * 100}%` }}
               />
             </div>

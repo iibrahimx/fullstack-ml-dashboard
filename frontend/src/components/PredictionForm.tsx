@@ -47,9 +47,12 @@ export function PredictionForm({ onResult }: PredictionFormProps) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white rounded-2xl shadow p-6 space-y-4"
+      className="bg-slate-150 rounded-2xl shadow-xl border border-slate-200 p-6 space-y-4"
     >
-      <h2 className="text-xl font-semibold text-gray-800">Enter details</h2>
+      <h2 className="text-xl font-semibold text-slate-900">Enter details</h2>
+      <p className="text-sm mb-5 text-slate-600">
+        Fill the financial details below to generate a loan risk prediction.
+      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <label className="space-y-1">
@@ -168,7 +171,7 @@ export function PredictionForm({ onResult }: PredictionFormProps) {
       <button
         type="submit"
         disabled={loading}
-        className="w-full rounded-lg bg-gray-900 text-white py-2 font-medium disabled:opacity-60"
+        className="w-full rounded-lg bg-amber-700 hover:bg-amber-900 cursor-pointer text-white py-2 font-medium transition disabled:opacity-60"
       >
         {loading ? "Predicting..." : "Predict risk"}
       </button>
