@@ -14,6 +14,18 @@ The goal of this project was to practice building and connecting:
 
 ---
 
+## Dashboard Preview
+
+### Form View
+
+![Form Preview](screenshots/dashboard_form.png)
+
+### Charts View
+
+![Charts Preview](screenshots/dashboard_charts.png)
+
+---
+
 ## Project Overview
 
 The project contains three main parts:
@@ -57,7 +69,7 @@ POST /api/predict/
 
 Example request:
 
-````json
+```json
 {
   "monthly_income": 20000,
   "monthly_expense": 9000,
@@ -68,6 +80,7 @@ Example request:
   "on_time_payment_ratio": 0.85,
   "num_loans_taken": 2
 }
+```
 
 Example response:
 
@@ -79,7 +92,7 @@ Example response:
     "class_1": 0.09
   }
 }
-````
+```
 
 ---
 
@@ -127,27 +140,25 @@ Charts included:
 
 ## Project Structure
 
+```text
 fullstack-ml-dashboard/
-
-backend/
-api/
-config/
-manage.py
-
-frontend/
-src/
-components/
-pages/
-services/
-types/
-
-ml/
-notebooks
-data
-model
-
-DEV_NOTES/
-learning notes created during development
+├── backend/
+│   ├── api/
+│   ├── config/
+│   └── manage.py
+├── frontend/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── services/
+│       └── types/
+├── ml/
+│   ├── notebooks/
+│   ├── data/
+│   └── model/
+├── DEV_NOTES/  # learning notes created during development
+└── screenshots/
+```
 
 ---
 
@@ -190,7 +201,7 @@ python manage.py runserver
 
 The API will run at:
 
-http://127.0.0.1:8000
+`http://127.0.0.1:8000`
 
 ---
 
@@ -203,7 +214,7 @@ cd frontend
 # Install dependencies
 npm install
 
-# Frontend enviroment variables
+# Frontend environment variables
 # Copy the example file and create your local env file
 cp .env.example .env.local
 
@@ -213,7 +224,7 @@ npm run dev
 
 Open:
 
-http://localhost:5173
+`http://localhost:5173`
 
 ---
 
